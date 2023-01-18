@@ -97,7 +97,6 @@ ul li a:hover{
 }
 
 ul li a:before{
-  content:'';
   position:absolute;
   top:0;
   left:0;
