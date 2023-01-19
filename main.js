@@ -5,7 +5,7 @@ const Texts = [
   ];
   
   let tagCloud = TagCloud('.Sphere', Texts, {
-  
+   
       // Sphere radius in px
       radius: 230,
   
