@@ -1,0 +1,208 @@
+*{
+  font-family: sans-serif;
+  
+}
+
+body{
+  background-image: url(https://user-images.githubusercontent.com/39142850/67110554-fdea5400-f20d-11e9-834a-d459a612b7b1.gif);
+  overflow: hidden;
+}
+
+.bi {
+  color: white;
+   width: 80px;
+   height: 30px;
+   position:absolute;
+
+   
+
+}
+
+.wie {
+  color: white;
+  margin-left: 40%;
+  margin-top: 200px
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+/* Applying CSS to sphere */
+.tagcloud {
+left: 30%;
+letter-spacing: 1px;
+font-size: 20px;
+}
+
+/* Change color of each text in sphere on hover   */
+.tagcloud--item:hover {
+color: white ;
+}
+
+.wrapper {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 10vh 50vh;
+
+
+}
+
+/* .wrapper, .left , .right , .header {
+border: 1px solid black;
+} */
+
+.header {
+grid-column-start: 1;
+grid-column-end: 3;
+}
+
+ul{
+margin:0;
+padding:0;
+display:flex;
+}
+
+ul li{
+list-style:none;
+margin:0 80px;
+transition:0.5s;
+}
+
+ul li a{
+display: block;
+position:relative;
+text-decoration:none;
+padding:5px;
+font-size:18px;
+font-family: sans-serif;
+color:#fff;
+text-transform:uppercase;
+transition:0.5s;
+}
+
+ul:hover li a{
+transform:scale(1.5);
+opacity:0.2;
+filter:blur(5px);
+}
+
+ul li a:hover{
+transform:scale(2);
+opacity:1;
+filter:blur(0);
+text-decoration:none;
+color:#fff;
+}
+
+ul li a:before{
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#ff497c;
+transition:0.5s;
+transform-origin:right;
+transform:scaleX(0);
+z-index:-1;
+}
+
+ul li a:hover:before{
+transition:transform 0.5s;
+transform-origin:left;
+transform:scaleX(1);
+}
+
+.container {
+width: 100%;
+background-color: #ddd; 
+border-radius: 5px;
+}
+
+.skills {
+text-align: right;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.html {
+width: 90%; background-color: #BFFF00;
+color: #BFFF00;
+border-radius: 5px;
+}
+.css {
+
+width: 80%; background-color: #2196F3;
+color: #2196F3;
+border-radius: 5px;
+}
+
+.Javascript {
+
+width: 40%; background-color: #f44336;
+color: #f44336;
+border-radius: 5px;
+}
+.html, .css , .Javascript{
+transform-origin: left;
+animation: links 2s normal forwards;
+animation-iteration-count: 1;
+
+}
+
+@keyframes links {
+0% {
+  transform: scaleX(0);
+}
+
+100% {
+  transform: scaleX(1);
+}
+}
+
+h1 {
+color: white;
+}
+
+p {
+color: lightgrey;
+} 
+
+.Whoami {
+width: 500px;
+
+
+}
+
+.Project {
+width: 500px;
+margin-left: 50px;
+border-radius: 10px;
+}
+
+.boterkaas {
+width: 500px;
+margin-left: 50px;
+border-radius: 10px;
+}
+
+.contact {
+text-align: center;
+color: white;
+}
+
+.telefoon{
+margin-top: 20vh;
+}
+.facebook{
+margin-top: 15vh;
+}
+.Email{
+margin-top: 10vh;
+}
+.linkedin{
+margin-top: 5vh;
+}
